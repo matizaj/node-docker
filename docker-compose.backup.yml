@@ -1,0 +1,13 @@
+﻿version: "3"
+services:
+  node-app:
+    build: .
+    ports:
+      - "5050:4040"
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules
+    environment:
+      - PORT=4040
+    # env_file:
+    #  - ./.env

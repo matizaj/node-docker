@@ -1,0 +1,11 @@
+﻿###
+GET http://localhost:4040/get HTTP/1.1
+
+###
+POST http://localhost:4040/post  
+content-type: application/json
+
+{
+    "name":"mateusz",
+    "age": 34
+}
